@@ -1,69 +1,5 @@
-//The code using class can be found below after this code.
+//The code using class
 
-#include <iostream>
-
-using namespace std;
-
-#define SIZE 10
-
-void pigeonHole(int min, int max, int *myArray){
-	int length = max - min + 1;
-	int slots[length];
-
-	for (int i = 0; i < length; i++){
-		slots[i] = 0;
-	}
-
-	for (int j = 0; j < SIZE; j++){
-		slots[myArray[j] - min]++;
-	}
-
-	int k = 0;
-	for (int counter = 0; counter < length; counter++){
-		while (slots[counter] --> 0){
-			myArray[k] = counter + min;
-			k++;
-		}
-	}
-
-}
-
-int main(){
-	int min, max;
-	int myArray[SIZE];
-
-	cout <<" Enter the values into the array: \n"<< endl;
-	for (int i = 0; i < SIZE ; i++){
-		cin >> myArray[i];
-	}
-
-	min = myArray[0];
-	max = myArray[0];
-
-	for (int j = 1; j < SIZE; j++){
-		if (myArray[j] > max){
-			max = myArray[j];
-		}
-		if (myArray[j] < min){
-			min = myArray[j];
-		}
-	}
-
-	pigeonHole(min, max, myArray);
-
-	cout << "\n Sorted order: \n" << endl;
-
-	for (int i = 0; i < SIZE; i++){
-		cout << myArray[i] << " " ;
-	}
-
-
-}
-
-
-
-/*
-//Code using class
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -72,7 +8,7 @@ using namespace std;
  * Example call:
  *      PigeonHole::sort(myArray, SIZE);
  */
-/*class PigeonHole {
+class PigeonHole {
     public:
         static void sort(int *myArray, int SIZE){
             int min = myArray[0];
@@ -117,7 +53,7 @@ using namespace std;
 /*
  * Sample usage of PigeonHole Sort
  */
-/*int main(){
+int main(){
     int min, max, SIZE;
     cout << "Enter the size of the array\n";
     cin >> SIZE;
@@ -135,4 +71,4 @@ using namespace std;
         cout << myArray[i] << " " ;
     }
 }
-*/
+
