@@ -8,8 +8,6 @@ void pigeonHole(int min, int max, int *myArray){
 	int length = max - min + 1;
 	int slots[length];
 
-	int counter, *current = myArray;
-
 	for (int i = 0; i < length; i++){
 		slots[i] = 0;
 	}
@@ -19,7 +17,7 @@ void pigeonHole(int min, int max, int *myArray){
 	}
 
 	int k = 0;
-	for (counter = 0; counter < length; counter++){
+	for (int counter = 0; counter < length; counter++){
 		while (slots[counter] --> 0){
 			myArray[k] = counter + min;
 			k++;
