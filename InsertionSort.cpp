@@ -1,4 +1,4 @@
-//The code using class
+//Uses Class to call the function
 
 #include <iostream>
 using namespace std;
@@ -23,9 +23,7 @@ class InsertionSort{
         }
 };
 
-/*
- * Sample usage of PigeonHole Sort
- */
+
 int main(){
     int SIZE;
     cout << "Enter the size of the array\n";
