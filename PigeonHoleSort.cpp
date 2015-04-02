@@ -27,6 +27,7 @@ class PigeonHole {
             // Length is no of maximum possible distict nos between min and max
             int length = max - min + 1;
             vector<int> slots(length); // create slots to support the distinct possible nos
+            //You could probably use this, int slots[length], but some compilers gives you error on that
 
             // setting count of all slots to zero
             for (int i = 0; i < length; i++){
