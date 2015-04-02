@@ -1,4 +1,4 @@
-//The code using class
+//This program uses class to call the function
 
 #include <iostream>
 using namespace std;
