@@ -1,8 +1,8 @@
 //This program uses class to call the function
 
 #include <iostream>
-using namespace std;
 #include <vector>
+using namespace std;
 /*
  * Implementation of Pigeon Hole Sort
  * Example call:
