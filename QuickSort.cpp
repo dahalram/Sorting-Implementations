@@ -8,9 +8,7 @@ void quickSort(int myList[], int left, int right){
 	int temp;
 	int pivot = myList[(left + right)/2];
 
-
 	// Partition
-
 	while (l <= r){
 		while (myList[l] < pivot){
 			l++;
@@ -28,6 +26,7 @@ void quickSort(int myList[], int left, int right){
 		}
 	}
 
+	//Recursion
 	if (left < r){
 		quickSort(myList, left, r);
 	}
