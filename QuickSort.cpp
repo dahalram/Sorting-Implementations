@@ -48,7 +48,8 @@ int main(){
 	int left = 0, right = n-1;
 
 	quickSort(myList, left, right);
-
+	
+	cout << " Your Sorted List: \n";
 	for (int k = 0; k < n; k++){
 		cout << myList[k] << " ";
 	}
