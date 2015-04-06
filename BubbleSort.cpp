@@ -34,6 +34,7 @@ int main(){
 
 	bubbleSort(myList, n);
 	
+	//Your sorted array
 	cout << " *****Your sorted array: *****\n";
 	for (int i = 0; i < n; i++){
 		cout << myList[i] << " ";
