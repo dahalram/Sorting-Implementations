@@ -7,6 +7,7 @@ void bubbleSort(int myList[], int n){
 	int temp;
 	bool swap = true;
 
+	//Loop until the list is sorted
 	while(swap){
 		swap = false;
 		i++;
