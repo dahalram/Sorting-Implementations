@@ -51,6 +51,7 @@ int main(){
 	makeMax(myList, n);
 	HeapSort(myList, n);
 
+	//Print out the sorted list
 	cout << " Sorted List is: \n";
 	for (int i = 1; i <= n; i++){
 		cout << myList[i] << " ";
