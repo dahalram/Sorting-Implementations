@@ -1,3 +1,9 @@
+//HeapSort implementation
+
+/*
+Running time: O(n log (n))
+*/
+
 #include <iostream>
 
 using namespace std;
