@@ -1,3 +1,7 @@
+/*
+Running time: O(n^2)
+*/
+
 #include <iostream>
 
 using namespace std;
